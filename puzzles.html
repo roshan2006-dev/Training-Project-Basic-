@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <nav class="navbar">
+
         <div class="nav-container">
+
             <h2>Cricket World</h2>
 
             <div class="nav-links">
@@ -17,98 +20,265 @@
                 <a href="records.html">Records</a>
                 <a href="puzzles.html" class="active">Puzzles</a>
             </div>
+
         </div>
+
     </nav>
 
+
     <section class="page-header">
+
         <p>TEST YOUR KNOWLEDGE</p>
+
         <h1>Cricket Puzzles</h1>
-        <p>How much do you know about cricket?</p>
+
+        <p>
+            How much do you know about cricket?
+        </p>
+
     </section>
+
 
     <main class="container">
 
-        <div class="puzzles-grid">
 
-            <div class="puzzle-card">
-                <div class="question-number">Question 01</div>
-                <h2>Who is known as the King of Cricket?</h2>
+        <div class="quiz-score">
 
-                <div class="options">
-                    <p>A. Rohit Sharma</p>
-                    <p>B. Virat Kohli</p>
-                    <p>C. MS Dhoni</p>
-                    <p>D. KL Rahul</p>
-                </div>
-            </div>
+            <p>Your Score</p>
 
-            <div class="puzzle-card">
-                <div class="question-number">Question 02</div>
-                <h2>Who is known as the Hitman?</h2>
-
-                <div class="options">
-                    <p>A. Virat Kohli</p>
-                    <p>B. Rohit Sharma</p>
-                    <p>C. Hardik Pandya</p>
-                    <p>D. Shubman Gill</p>
-                </div>
-            </div>
-
-            <div class="puzzle-card">
-                <div class="question-number">Question 03</div>
-                <h2>Who is famous for the helicopter shot?</h2>
-
-                <div class="options">
-                    <p>A. MS Dhoni</p>
-                    <p>B. KL Rahul</p>
-                    <p>C. Shubman Gill</p>
-                    <p>D. Rishabh Pant</p>
-                </div>
-            </div>
-
-            <div class="puzzle-card">
-                <div class="question-number">Question 04</div>
-                <h2>Who is famous for bowling yorkers?</h2>
-
-                <div class="options">
-                    <p>A. Jasprit Bumrah</p>
-                    <p>B. Rishabh Pant</p>
-                    <p>C. Shubman Gill</p>
-                    <p>D. Hardik Pandya</p>
-                </div>
-            </div>
-
-            <div class="puzzle-card">
-                <div class="question-number">Question 05</div>
-                <h2>Who is a famous Indian all-rounder?</h2>
-
-                <div class="options">
-                    <p>A. Virat Kohli</p>
-                    <p>B. Ravindra Jadeja</p>
-                    <p>C. KL Rahul</p>
-                    <p>D. Rishabh Pant</p>
-                </div>
-            </div>
-
-            <div class="puzzle-card">
-                <div class="question-number">Question 06</div>
-                <h2>Who was India's famous wicket keeper and captain?</h2>
-
-                <div class="options">
-                    <p>A. Shubman Gill</p>
-                    <p>B. Jasprit Bumrah</p>
-                    <p>C. MS Dhoni</p>
-                    <p>D. Mohammed Shami</p>
-                </div>
-            </div>
+            <h2>
+                <span id="score">0</span> / 6
+            </h2>
 
         </div>
 
+
+        <div id="quiz-result"></div>
+
+
+        <div class="puzzles-grid">
+
+
+            <div class="puzzle-card">
+
+                <div class="question-number">
+                    Question 01
+                </div>
+
+                <h2>
+                    Who is known as the King of Cricket?
+                </h2>
+
+                <div class="options">
+
+                    <p data-answer="wrong">
+                        A. Rohit Sharma
+                    </p>
+
+                    <p data-answer="correct">
+                        B. Virat Kohli
+                    </p>
+
+                    <p data-answer="wrong">
+                        C. MS Dhoni
+                    </p>
+
+                    <p data-answer="wrong">
+                        D. KL Rahul
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="puzzle-card">
+
+                <div class="question-number">
+                    Question 02
+                </div>
+
+                <h2>
+                    Who is known as the Hitman?
+                </h2>
+
+                <div class="options">
+
+                    <p data-answer="wrong">
+                        A. Virat Kohli
+                    </p>
+
+                    <p data-answer="correct">
+                        B. Rohit Sharma
+                    </p>
+
+                    <p data-answer="wrong">
+                        C. Hardik Pandya
+                    </p>
+
+                    <p data-answer="wrong">
+                        D. Shubman Gill
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="puzzle-card">
+
+                <div class="question-number">
+                    Question 03
+                </div>
+
+                <h2>
+                    Who is famous for the helicopter shot?
+                </h2>
+
+                <div class="options">
+
+                    <p data-answer="correct">
+                        A. MS Dhoni
+                    </p>
+
+                    <p data-answer="wrong">
+                        B. KL Rahul
+                    </p>
+
+                    <p data-answer="wrong">
+                        C. Shubman Gill
+                    </p>
+
+                    <p data-answer="wrong">
+                        D. Rishabh Pant
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="puzzle-card">
+
+                <div class="question-number">
+                    Question 04
+                </div>
+
+                <h2>
+                    Who is famous for bowling yorkers?
+                </h2>
+
+                <div class="options">
+
+                    <p data-answer="correct">
+                        A. Jasprit Bumrah
+                    </p>
+
+                    <p data-answer="wrong">
+                        B. Rishabh Pant
+                    </p>
+
+                    <p data-answer="wrong">
+                        C. Shubman Gill
+                    </p>
+
+                    <p data-answer="wrong">
+                        D. Hardik Pandya
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="puzzle-card">
+
+                <div class="question-number">
+                    Question 05
+                </div>
+
+                <h2>
+                    Who is a famous Indian all-rounder?
+                </h2>
+
+                <div class="options">
+
+                    <p data-answer="wrong">
+                        A. Virat Kohli
+                    </p>
+
+                    <p data-answer="correct">
+                        B. Ravindra Jadeja
+                    </p>
+
+                    <p data-answer="wrong">
+                        C. KL Rahul
+                    </p>
+
+                    <p data-answer="wrong">
+                        D. Rishabh Pant
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="puzzle-card">
+
+                <div class="question-number">
+                    Question 06
+                </div>
+
+                <h2>
+                    Who was India's famous wicket keeper and captain?
+                </h2>
+
+                <div class="options">
+
+                    <p data-answer="wrong">
+                        A. Shubman Gill
+                    </p>
+
+                    <p data-answer="wrong">
+                        B. Jasprit Bumrah
+                    </p>
+
+                    <p data-answer="correct">
+                        C. MS Dhoni
+                    </p>
+
+                    <p data-answer="wrong">
+                        D. Mohammed Shami
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <button id="reset-quiz">
+            Reset Quiz
+        </button>
+
+
     </main>
+
 
     <footer>
         <p>Cricket World © 2026</p>
     </footer>
-<script src="script.js"></script>
+
+
+    <button id="back-to-top">
+        Top
+    </button>
+
+
+    <script src="script.js"></script>
+
 </body>
 </html>
